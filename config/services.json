@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "services": [
+    {
+      "id": 6930486,
+      "slug": "mens-braids",
+      "name": "Men's braids",
+      "category": "Braids",
+      "enabled": true,
+      "featured": true,
+      "variants": [
+        {
+          "id": 15574739,
+          "label": "",
+          "durationMinutes": 150,
+          "priceLabel": "$70.00+",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/mens-braids"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6835196,
+      "slug": "kid-braid-styles",
+      "name": "Kid braid styles (10 & under)",
+      "category": "Kids",
+      "enabled": true,
+      "featured": true,
+      "variants": [
+        {
+          "id": 15472609,
+          "label": "",
+          "durationMinutes": 135,
+          "priceLabel": "$60.00+",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/kid-braid-styles"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6792972,
+      "slug": "feed-in-braids",
+      "name": "Feed in braids",
+      "category": "Braids",
+      "enabled": true,
+      "featured": false,
+      "variants": [
+        {
+          "id": 15427301,
+          "label": "",
+          "durationMinutes": 150,
+          "priceLabel": "$75.00+",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/feed-in-braids"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6792945,
+      "slug": "retwist-locs",
+      "name": "Retwist of Locs, shampoo treatment and style",
+      "category": "Locs",
+      "enabled": true,
+      "featured": true,
+      "variants": [
+        {
+          "id": 15427272,
+          "label": "",
+          "durationMinutes": 140,
+          "priceLabel": "$105.00",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/retwist-locs"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6792970,
+      "slug": "sew-in-closure",
+      "name": "Sew in closure",
+      "category": "Extensions",
+      "enabled": true,
+      "featured": false,
+      "variants": [
+        {
+          "id": 15427299,
+          "label": "",
+          "durationMinutes": 150,
+          "priceLabel": "$150.00",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/sew-in-closure"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6847664,
+      "slug": "starter-locs",
+      "name": "Starter Locs",
+      "category": "Locs",
+      "enabled": true,
+      "featured": false,
+      "variants": [
+        {
+          "id": 15485830,
+          "label": "",
+          "durationMinutes": 140,
+          "priceLabel": "$95.00",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/starter-locs"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6792993,
+      "slug": "silk-press",
+      "name": "Silk press",
+      "category": "Natural Hair",
+      "enabled": true,
+      "featured": false,
+      "variants": [
+        {
+          "id": 15427322,
+          "label": "",
+          "durationMinutes": 130,
+          "priceLabel": "$65.00+",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/silk-press"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6793021,
+      "slug": "nail-treatments",
+      "name": "Nail treatments",
+      "category": "Nails",
+      "enabled": true,
+      "featured": false,
+      "variants": [
+        {
+          "id": 15427350,
+          "label": "",
+          "durationMinutes": 30,
+          "priceLabel": "$25.00",
+          "providerIds": [
+            "brittani-taylor"
+          ],
+          "availability": {
+            "enabled": true,
+            "route": "/availability/nail-treatments"
+          }
+        }
+      ]
+    }
+  ]
+}

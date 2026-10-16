@@ -1,0 +1,216 @@
+.booking-shell{padding:90px 5vw;background:#f4f0e8;color:#111;min-height:70vh}.booking-shell>header h2{font-size:clamp(2.5rem,6vw,6rem);margin:.15em 0 .7em;text-transform:uppercase}.booking-shell>header>p{color:#8a6810;font-weight:800;letter-spacing:.18em}.booking-columns{display:grid;gap:22px;align-items:start}.booking-columns.single-provider{grid-template-columns:1.1fr .9fr}.booking-columns.multi-provider{grid-template-columns:.8fr 1.1fr .9fr}.booking-column{background:#fff;border:1px solid #d9d2c5;padding:22px}.booking-column h3{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}.booking-column>button{display:flex;flex-direction:column;gap:6px;width:100%;padding:17px;margin:8px 0;border:1px solid #ddd;background:#fff;text-align:left;cursor:pointer}.booking-column>button span{color:#686158;font-size:.84rem}.booking-column>button.selected{background:#111;color:#fff;border-color:#111;box-shadow:inset 5px 0 #d8a928}.booking-column>button.selected span{color:#d8a928}.summary{position:sticky;top:20px}.summary h4{font-size:2rem;margin:1em 0 .4em}.summary .continue{display:block;background:#d8a928;color:#111;border:0;text-align:center;font-weight:800;text-transform:uppercase}.widget-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px}.backdrop{position:absolute;inset:0;border:0;background:#000c}.widget-dialog{position:relative;width:min(930px,100%);height:min(850px,94vh);background:white;display:grid;grid-template-rows:auto 1fr}.widget-dialog header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;color:#111}.widget-dialog header button{width:42px;height:42px;border:0;border-radius:50%;background:#111;color:#fff;font-size:1.7rem}.widget-dialog iframe{width:100%;height:100%;border:0}@media(max-width:900px){.booking-columns.single-provider,.booking-columns.multi-provider{grid-template-columns:1fr}.summary{position:static}}@media(max-width:600px){.booking-shell{padding:65px 4vw}.widget-modal{padding:0}.widget-dialog{width:100%;height:100vh}}
+.date-list{display:flex;gap:8px;overflow-x:auto;padding:8px 0 16px}.date-list button,.time-grid button{border:1px solid #d8d1c5;background:#fff;color:#111;padding:11px 13px;cursor:pointer}.date-list button{white-space:nowrap}.date-list button.selected{background:#111;color:#fff;border-color:#111}.time-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.time-grid button:hover{background:#d8a928;border-color:#d8a928}@media(max-width:500px){.time-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.date-picker{display:grid;gap:8px;margin:22px 0 18px}.date-picker label,.time-heading{font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#706653}.date-picker select{width:100%;min-height:50px;padding:0 44px 0 15px;border:1px solid #cfc7ba;border-radius:0;background-color:#fff;color:#111;font:inherit;font-weight:700;cursor:pointer}.date-picker select:focus{outline:3px solid rgba(216,169,40,.3);outline-offset:2px;border-color:#9a7410}.time-heading{margin:20px 0 10px}.time-grid:empty::after{content:'No times available for this date.';grid-column:1/-1;color:#6b655d;font-size:.9rem;padding:12px 0}
+.appointment-fields{margin-top:26px}.appointment-fields .date-picker{margin:0 0 28px}.appointment-fields .date-picker label,.appointment-fields .time-heading{display:block;margin:0 0 12px;color:#111;font-size:1rem;font-weight:850;letter-spacing:0;text-transform:none}.appointment-fields .date-picker select{min-height:56px;border:1px solid #bbb3a7;border-radius:10px;padding:0 48px 0 16px;background-color:#fff;font-weight:650}.appointment-fields .time-heading{margin-bottom:12px}.time-placeholder{min-height:68px;display:flex;align-items:center;padding:0 18px;border:1px dashed #b8b0a4;border-radius:10px;background:#faf8f3;color:#6c665f;font-size:1rem}.appointment-fields .time-grid{grid-template-columns:repeat(3,minmax(90px,1fr));gap:10px}.appointment-fields .time-grid button{min-height:48px;border-radius:8px;font-weight:700}.appointment-fields .time-grid button:focus-visible{outline:3px solid rgba(216,169,40,.35);outline-offset:2px}@media(max-width:520px){.appointment-fields .time-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* BOOKING_RADIUS_V1 */
+.booking-shell{width:calc(100% - 48px);margin:24px auto;border-radius:var(--radius-section);overflow:hidden}
+.booking-column{border-radius:var(--radius-card);overflow:hidden}
+.booking-column>button,.summary .continue,.date-picker select,.date-list button,.time-grid button,.time-placeholder{border-radius:var(--radius-control)}
+.widget-dialog{border-radius:var(--radius-card);overflow:hidden}
+.widget-dialog header button{border-radius:var(--radius-round)}
+@media(max-width:600px){.booking-shell{width:calc(100% - 24px);border-radius:20px}.booking-column,.widget-dialog{border-radius:14px}.widget-modal .widget-dialog{border-radius:0}}
+
+/* CREAM_CANVAS_BOOKING_V1 */
+.booking-shell{box-shadow:0 18px 48px rgba(55,42,22,.1)}
+
+/* SELECTED_TIME_CONTINUE_V1 */
+.appointment-fields .time-grid button{
+  border:1px solid #5a5a5a;
+  background:#242424;
+  color:#f7f4ee;
+  transition:border-color .16s ease,background-color .16s ease,transform .16s ease;
+}
+.appointment-fields .time-grid button:hover{
+  border-color:#d8a928;
+  background:#2c2921;
+}
+.appointment-fields .time-grid button.selected,
+.appointment-fields .time-grid button[aria-pressed="true"]{
+  border-color:#ef8436;
+  background:#3b291e;
+  color:#fff;
+  box-shadow:0 0 0 1px rgba(239,132,54,.18) inset;
+}
+.booking-continue-slot{
+  width:100%;
+  min-height:64px;
+  margin-top:26px;
+  padding:14px 24px;
+  border:1px solid #ef8436;
+  border-radius:var(--radius-round,999px);
+  background:#ef8436;
+  color:#111;
+  font-size:clamp(1rem,1.6vw,1.3rem);
+  font-weight:900;
+  line-height:1.3;
+  cursor:pointer;
+  transition:transform .16s ease,background-color .16s ease,box-shadow .16s ease;
+}
+.booking-continue-slot:hover{
+  background:#ff9344;
+  transform:translateY(-1px);
+  box-shadow:0 12px 28px rgba(239,132,54,.22);
+}
+.booking-continue-slot:active{transform:translateY(0)}
+@media(max-width:600px){
+  .booking-continue-slot{min-height:58px;margin-top:20px;padding:13px 16px;font-size:1rem}
+}
+
+/* BLUE_CHARCOAL_BOOKING_V1 */
+.booking-shell{background:var(--surface-dark);color:var(--text-on-dark);border:1px solid var(--surface-dark-border)}
+.booking-shell>header>p{color:var(--accent-gold)}
+.booking-column{background:var(--surface-dark-raised);border-color:var(--surface-dark-border);color:var(--text-on-dark)}
+.booking-column>button{background:var(--surface-dark-card);border-color:var(--surface-dark-border);color:var(--text-on-dark)}
+.booking-column>button span{color:var(--text-on-dark-muted)}
+.booking-column>button:hover{background:var(--surface-dark-hover);border-color:var(--surface-dark-border-strong)}
+.booking-column>button.selected{background:var(--surface-dark-card);border-color:var(--accent-gold);color:var(--text-on-dark);box-shadow:inset 5px 0 var(--accent-gold)}
+.summary h4,.appointment-fields .date-picker label,.appointment-fields .time-heading{color:var(--text-on-dark)}
+.summary p,.time-placeholder{color:var(--text-on-dark-muted)}
+.appointment-fields .date-picker select{background:var(--surface-dark-card);border-color:var(--surface-dark-border-strong);color:var(--text-on-dark);color-scheme:dark}
+.time-placeholder{background:var(--surface-dark-card);border-color:var(--surface-dark-border)}
+.appointment-fields .time-grid button{background:var(--surface-dark-card);border-color:var(--surface-dark-border-strong);color:var(--text-on-dark)}
+.appointment-fields .time-grid button:hover{background:var(--surface-dark-hover);border-color:var(--accent-gold)}
+.appointment-fields .time-grid button.selected,.appointment-fields .time-grid button[aria-pressed="true"]{background:var(--accent-warm-soft);border-color:var(--accent-warm);color:var(--text-on-dark)}
+.booking-continue-slot{background:var(--accent-warm);border-color:var(--accent-warm);color:var(--surface-dark)}
+.summary .continue{background:var(--accent-gold);color:var(--surface-dark)}
+.widget-dialog{background:var(--surface-dark-raised);border:1px solid var(--surface-dark-border)}
+.widget-dialog header{background:var(--surface-dark);color:var(--text-on-dark);border-bottom:1px solid var(--surface-dark-border)}
+.widget-dialog header button{background:var(--surface-dark-card);color:var(--text-on-dark)}
+
+/* VIBRANT_BLUE_BOOKING_V1 */
+.booking-shell{background:linear-gradient(145deg,var(--surface-dark),#0e2d4b);border-color:var(--surface-dark-border);box-shadow:0 22px 58px rgba(7,44,74,.2)}
+.booking-column{background:linear-gradient(150deg,var(--surface-dark-raised),#143b60);border-color:var(--surface-dark-border)}
+.booking-column>button{background:var(--surface-dark-card);border-color:var(--surface-dark-border);box-shadow:0 6px 16px rgba(5,31,52,.16)}
+.booking-column>button:hover{background:var(--surface-dark-hover);border-color:var(--surface-cyan);transform:translateY(-1px)}
+.booking-column>button.selected{border-color:var(--accent-gold);box-shadow:inset 5px 0 var(--accent-gold),0 0 0 1px rgba(255,196,46,.12)}
+.appointment-fields .date-picker select{background:linear-gradient(135deg,var(--surface-dark-card),#1d527f);border-color:var(--surface-dark-border-strong)}
+.appointment-fields .time-grid button{background:linear-gradient(145deg,var(--surface-dark-card),#1b4d78);border-color:var(--surface-dark-border-strong)}
+.appointment-fields .time-grid button:hover{background:var(--surface-dark-hover);border-color:var(--surface-cyan);box-shadow:0 8px 20px rgba(39,197,232,.12)}
+.appointment-fields .time-grid button.selected,.appointment-fields .time-grid button[aria-pressed="true"]{background:linear-gradient(135deg,var(--accent-warm-soft),#774128);border-color:var(--accent-warm);box-shadow:0 0 0 1px rgba(255,122,47,.2) inset,0 8px 20px rgba(255,122,47,.13)}
+.booking-continue-slot{background:linear-gradient(100deg,var(--accent-warm),#ff963d);border-color:var(--accent-warm);box-shadow:0 14px 30px rgba(255,122,47,.24)}
+.booking-continue-slot:hover{background:var(--accent-warm-hover);box-shadow:0 16px 35px rgba(255,122,47,.32)}
+
+/* BALANCED_CREAM_BOOKING_V1 */
+.booking-shell{
+  background:linear-gradient(145deg,var(--canvas-cream-soft,#fff6e5),#f8ecd2);
+  color:#132a42;
+  border:1px solid #d8c49d;
+  box-shadow:0 20px 50px rgba(54,42,22,.12);
+}
+.booking-shell>header>p{color:#a97900}
+.booking-shell>header h2{color:#102b46}
+.booking-columns{align-items:stretch}
+.booking-column{
+  background:#fffdf8;
+  color:#132a42;
+  border:1px solid #d7c49f;
+  box-shadow:0 10px 28px rgba(62,48,23,.07);
+}
+.booking-column h3,.summary h4,
+.appointment-fields .date-picker label,
+.appointment-fields .time-heading{color:#102b46}
+.booking-column>button{
+  background:#f7f1e5;
+  border:1px solid #cdbd9f;
+  color:#132a42;
+  box-shadow:none;
+}
+.booking-column>button span{color:#675f54}
+.booking-column>button:hover{
+  background:#edf5f8;
+  border-color:#5b93b6;
+  transform:translateY(-1px);
+}
+.booking-column>button.selected{
+  background:#fff7dc;
+  border-color:#d99e00;
+  color:#102b46;
+  box-shadow:inset 6px 0 #ffc42e,0 0 0 1px rgba(217,158,0,.1);
+}
+.booking-column>button.selected span{color:#9c6e00}
+.summary p,.time-placeholder{color:#675f54}
+.appointment-fields .date-picker select{
+  background:#fff;
+  border:1px solid #9cabb4;
+  color:#102b46;
+  color-scheme:light;
+  box-shadow:0 0 0 4px rgba(255,196,46,.12);
+}
+.appointment-fields .date-picker select:hover,
+.appointment-fields .date-picker select:focus{
+  border-color:#2c79a5;
+}
+.time-placeholder{
+  background:#f7f1e5;
+  border-color:#cdbd9f;
+}
+.appointment-fields .time-grid button{
+  background:#fff;
+  border:1px solid #9cabb4;
+  color:#102b46;
+  box-shadow:none;
+}
+.appointment-fields .time-grid button:hover{
+  background:#edf7fb;
+  border-color:#2f88b8;
+  color:#0b5278;
+  box-shadow:0 8px 18px rgba(28,101,143,.09);
+}
+.appointment-fields .time-grid button.selected,
+.appointment-fields .time-grid button[aria-pressed="true"]{
+  background:#fff0e5;
+  border-color:var(--accent-warm,#ff7a2f);
+  color:#7a3211;
+  box-shadow:0 0 0 1px rgba(255,122,47,.15) inset;
+}
+.booking-continue-slot{
+  background:linear-gradient(100deg,var(--accent-warm,#ff7a2f),#ff9b4b);
+  border-color:var(--accent-warm,#ff7a2f);
+  color:#15283c;
+  box-shadow:0 13px 28px rgba(255,122,47,.22);
+}
+.booking-continue-slot:hover{
+  background:#ff9658;
+  color:#10243a;
+}
+.summary .continue{
+  background:var(--accent-gold,#ffc42e);
+  color:#102b46;
+}
+@media(max-width:600px){
+  .booking-shell{background:var(--canvas-cream-soft,#fff6e5)}
+}
+
+/* MIST_BLUE_SERVICE_CARDS_V1 */
+.booking-column > button {
+  background: #eef5f8;
+  border-color: #b7ccd8;
+  color: #112a43;
+  box-shadow: none;
+}
+
+.booking-column > button span {
+  color: #5f6f78;
+}
+
+.booking-column > button:hover {
+  background: #e4f1f7;
+  border-color: #6fa3bf;
+  color: #112a43;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(45, 105, 137, 0.09);
+}
+
+.booking-column > button.selected {
+  background: #fff8df;
+  border-color: #e0a600;
+  color: #112a43;
+  box-shadow:
+    inset 6px 0 #ffc42e,
+    0 0 0 1px rgba(224, 166, 0, 0.10);
+}
+
+.booking-column > button.selected span {
+  color: #896100;
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "mode": "demo",
+  "heading": "Style inspiration",
+  "intro": "A configurable gallery ready to be replaced with work from the business.",
+  "disclosure": "AI-generated placeholder images for layout preview. Replace with actual business work before production.",
+  "items": [
+    {
+      "id": "demo-gallery-01",
+      "src": "/assets/demo-work/gallery-01.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 01",
+      "title": "Signature style 01",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-02",
+      "src": "/assets/demo-work/gallery-02.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 02",
+      "title": "Signature style 02",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-03",
+      "src": "/assets/demo-work/gallery-03.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 03",
+      "title": "Signature style 03",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-04",
+      "src": "/assets/demo-work/gallery-04.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 04",
+      "title": "Signature style 04",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-05",
+      "src": "/assets/demo-work/gallery-05.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 05",
+      "title": "Signature style 05",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-06",
+      "src": "/assets/demo-work/gallery-06.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 06",
+      "title": "Signature style 06",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-07",
+      "src": "/assets/demo-work/gallery-07.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 07",
+      "title": "Signature style 07",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-08",
+      "src": "/assets/demo-work/gallery-08.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 08",
+      "title": "Signature style 08",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-09",
+      "src": "/assets/demo-work/gallery-09.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 09",
+      "title": "Signature style 09",
+      "category": "Haircut",
+      "generated": true
+    },
+    {
+      "id": "demo-gallery-10",
+      "src": "/assets/demo-work/gallery-10.jpg",
+      "alt": "AI-generated hairstyle portfolio placeholder 10",
+      "title": "Signature style 10",
+      "category": "Haircut",
+      "generated": true
+    }
+  ]
+}

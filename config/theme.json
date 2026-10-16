@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "colors": {
+    "background": "#090909",
+    "surface": "#151515",
+    "paper": "#f4f0e8",
+    "text": "#f4f0e8",
+    "mutedText": "#aaa69d",
+    "primary": "#d8a928",
+    "primaryText": "#090909"
+  },
+  "hero": {
+    "eyebrow": "Roanoke, Virginia",
+    "title": "Your vision. Our craft.",
+    "description": "Choose a service and book current availability securely through Booksy."
+  }
+}

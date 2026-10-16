@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "slug": "dreamslayerz",
+    "name": "Dream Slayerz 540"
+  },
+  "business": {
+    "industry": "beauty-and-wellness",
+    "timezone": "America/New_York",
+    "currency": "USD",
+    "address": "4306 Appleton Ave NW, Roanoke, VA 24017",
+    "phone": "(540) 257-4069"
+  },
+  "website": {
+    "productionUrl": "https://dreamslayerz.proudpopsbarbershop.com"
+  },
+  "booksy": {
+    "businessId": 1051605,
+    "widgetId": 1051605,
+    "profileUrl": "https://booksy.com/en-us/1051605_dream-slayerz-540_professional-services_134579_roanoke",
+    "country": "us",
+    "language": "en"
+  },
+  "booking": {
+    "layoutMode": "auto",
+    "selectionOrder": "provider-first",
+    "providerLabelSingular": "Team member",
+    "providerLabelPlural": "Team members",
+    "liveAvailability": true,
+    "samePageWidget": true,
+    "availabilityFailureMode": "widget",
+    "availabilityWindowDays": 14
+  }
+}

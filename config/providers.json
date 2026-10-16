@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "providers": [
+    {
+      "id": "brittani-taylor",
+      "booksyStafferId": 1001956,
+      "name": "Brittani Taylor",
+      "title": "Service provider",
+      "enabled": true,
+      "onlineBooking": true,
+      "serviceSlugs": [
+        "mens-braids",
+        "kid-braid-styles",
+        "feed-in-braids",
+        "retwist-locs",
+        "sew-in-closure",
+        "starter-locs",
+        "silk-press",
+        "nail-treatments"
+      ]
+    }
+  ]
+}

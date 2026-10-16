@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "mode": "demo",
+  "heading": "What clients say",
+  "intro": "A configurable review section ready for verified customer feedback.",
+  "disclosure": "Sample reviews for layout preview. Replace with verified business reviews before production.",
+  "reviews": [
+    {"id":"sample-review-1","displayName":"Sample Client A","rating":5,"text":"Professional service, clear communication, and careful attention to detail.","source":"demo","verified":false},
+    {"id":"sample-review-2","displayName":"Sample Client B","rating":5,"text":"The online booking process was simple and the appointment experience was organized.","source":"demo","verified":false},
+    {"id":"sample-review-3","displayName":"Sample Client C","rating":5,"text":"A clean, welcoming experience with consistent service from start to finish.","source":"demo","verified":false}
+  ]
+}

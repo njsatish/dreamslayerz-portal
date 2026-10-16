@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "mode": "mixed",
+  "eyebrow": "Roanoke, VA",
+  "headline": {
+    "line1": "Your vision.",
+    "line2": "Our craft."
+  },
+  "description": "Professional services, clear options, live availability, and convenient online booking.",
+  "primaryAction": {"label": "Book now", "target": "book"},
+  "secondaryAction": {"label": "View services", "target": "services"},
+  "carousel": {
+    "autoplay": true,
+    "intervalSeconds": 7,
+    "pauseOnHover": true,
+    "showArrows": true,
+    "showIndicators": true
+  },
+  "slides": [
+    {
+      "id": "featured-mens-braids",
+      "type": "service",
+      "serviceSlug": "mens-braids",
+      "variantId": 15574739,
+      "image": "/assets/demo-work/gallery-01.jpg",
+      "badge": "Featured service",
+      "title": "Men's braids",
+      "subtitle": "Detailed styling with current availability",
+      "action": {"label": "Book this service", "target": "book"}
+    },
+    {
+      "id": "featured-provider",
+      "type": "provider",
+      "providerId": "brittani-taylor",
+      "image": "/assets/demo-work/gallery-02.jpg",
+      "badge": "Featured provider",
+      "title": "Brittani Taylor",
+      "subtitle": "Braids · Locs · Natural hair",
+      "action": {"label": "Book with provider", "target": "book"}
+    },
+    {
+      "id": "featured-gallery",
+      "type": "gallery",
+      "galleryItemId": "demo-gallery-03",
+      "image": "/assets/demo-work/gallery-03.jpg",
+      "badge": "Style inspiration",
+      "title": "Explore the portfolio",
+      "subtitle": "Browse configurable work-photo galleries",
+      "action": {"label": "View this photo", "target": "gallery"}
+    },
+    {
+      "id": "live-booking",
+      "type": "booking",
+      "image": "/assets/demo-work/gallery-04.jpg",
+      "badge": "Live availability",
+      "title": "Choose a date and time",
+      "subtitle": "Continue securely through Booksy",
+      "action": {"label": "Find an appointment", "target": "book"}
+    }
+  ]
+}

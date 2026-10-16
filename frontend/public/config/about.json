@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "eyebrow": "About the business",
+  "headline": "Personal service. Clear booking.",
+  "introduction": "A focused appointment experience with clearly presented services, live availability, and final confirmation through Booksy.",
+  "spotlight": {
+    "enabled": true,
+    "providerId": "brittani-taylor",
+    "label": "Meet your provider",
+    "image": "/assets/providers/provider-placeholder.jpg",
+    "imageMode": "demo",
+    "imageAlt": "AI-generated provider profile placeholder for the About page layout",
+    "heading": "Dedicated service with attention to detail.",
+    "paragraphs": [
+      "Use this section to introduce the primary provider, describe the business approach, and explain the services or techniques clients can expect.",
+      "The copy is intentionally configuration-driven so a barber, stylist, massage therapist, nail technician, tattoo artist, or wellness provider can replace it without editing React code.",
+      "Replace this placeholder biography and image with approved business content before production."
+    ],
+    "specialties": ["Braids", "Locs", "Natural hair"],
+    "primaryAction": {"label": "Book an appointment", "target": "book"},
+    "secondaryAction": {"label": "View services", "target": "services"}
+  },
+  "trustCard": {
+    "enabled": true,
+    "mode": "demo",
+    "eyebrow": "Booking experience",
+    "value": "LIVE",
+    "headline": "Availability",
+    "description": "Choose a service, date, and time before continuing securely through Booksy.",
+    "action": {"label": "Book now", "target": "book"}
+  }
+}

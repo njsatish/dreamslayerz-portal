@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "logo": {
+    "src": "/assets/brand/logo.svg",
+    "alt": "Business logo",
+    "mode": "demo"
+  },
+  "favicon": {
+    "src": "/assets/brand/logo.svg",
+    "type": "image/svg+xml"
+  },
+  "header": {
+    "showBusinessName": true
+  },
+  "footer": {
+    "showLogo": true,
+    "showBusinessName": true
+  }
+}
