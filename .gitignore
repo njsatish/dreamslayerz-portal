@@ -36,3 +36,6 @@ generated/booksy-*/
 *.tmp
 *.bak
 *~
+
+# Local credentials
+.env.local
